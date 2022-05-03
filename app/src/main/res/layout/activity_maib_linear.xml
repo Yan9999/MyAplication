@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:background="#551FB5"
     android:orientation="vertical">
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/EditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:hapticFeedbackEnabled="false"
-        android:text="text"
+        android:text="0"
         android:textSize="@dimen/key_text_size"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
         >
 
         <Button
-
+            android:onClick="button1_onClick"
             android:id="@+id/button0.1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,6 +30,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,6 +41,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,6 +61,7 @@
 
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,6 +72,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,6 +83,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,6 +101,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,6 +112,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,6 +123,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,6 +140,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button0.0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,6 +151,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -160,6 +170,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -170,6 +181,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,6 +192,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_equals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,6 +210,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -207,6 +221,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -217,6 +232,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
+            android:onClick="button1_onClick"
             android:id="@+id/button_multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
