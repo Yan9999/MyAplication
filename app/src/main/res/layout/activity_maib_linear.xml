@@ -145,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_small"
-            android:layout_weight="4.3"
+            android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
             android:text="@string/_0"
             android:textSize="@dimen/key_text_size" />
@@ -160,6 +160,16 @@
             android:backgroundTint="@color/teal_700"
             android:text="@string/_dot"
             android:textSize="@dimen/key_text_size" />
+        <Button
+            android:onClick="button1_onClick"
+            android:id="@+id/button_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/_AC"
+            android:textSize="@dimen/key_text_size" />
 
 
     </LinearLayout>
@@ -170,7 +180,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="operation"
             android:id="@+id/button_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -181,7 +191,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="operation"
             android:id="@+id/button_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -192,7 +202,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="Equals"
             android:id="@+id/button_equals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,7 +220,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="operation"
             android:id="@+id/button_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -221,7 +231,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="operation"
             android:id="@+id/button_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -232,7 +242,7 @@
             android:textSize="@dimen/key_text_size" />
 
         <Button
-            android:onClick="button1_onClick"
+            android:onClick="operation"
             android:id="@+id/button_multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

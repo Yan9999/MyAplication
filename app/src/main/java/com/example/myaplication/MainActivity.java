@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
     Boolean isNew= true;
 
+    String oldNumber;
+    String operator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +42,18 @@ public class MainActivity extends AppCompatActivity {
            case R.id.button0_8:number = number +"8";break;
            case R.id.button0_9:number = number +"9";break;
            case R.id.button0_0:number = number +"0";break;
-           case R.id.button_dot:number = number +".";break;
-           case R.id.button_minus:number = number +"-";break;
-           case R.id.button_plus:number = number +"+";break;
-           case R.id.button_multiply:number = number +"*";break;
-           case R.id.button_share:number = number +"/";break;
-           case R.id.button_equals:number = number +"=";break;
-           case R.id.button_percentage:number = number +"%";break;
+           case R.id.button_AC:number ="";break;
+
+
+
+           case R.id.button_dot:
+
+            if(dotIsTrue(number)){
+
+            }else {
+                number = number + ".";
+            }
+               break;
 
 
 
@@ -54,5 +62,39 @@ public class MainActivity extends AppCompatActivity {
        }
        editText.setText(number);
     }
+    public void operation (View view){
+        isNew=true;
+        oldNumber = editText.getText().toString();
+        switch (view.getId()){
+        case R.id.button_minus: operator=  "-";break;
+        case R.id.button_plus: operator="+";break;
+        case R.id.button_multiply: operator="*";break;
+        case R.id.button_share: operator="/";break;
+        }
+    }
+
+
+    public void Equals (View view){
+        String newNumber = editText.getText().toString();
+        Double result =0.0;
+        switch (operator){
+            case "-":result =Double.parseDouble(oldNumber)- Double.parseDouble(newNumber);break;
+            case "+":result =Double.parseDouble(oldNumber)+ Double.parseDouble(newNumber);break;
+            case "/":result =Double.parseDouble(oldNumber)/ Double.parseDouble(newNumber);break;
+            case "*":result =Double.parseDouble(oldNumber)* Double.parseDouble(newNumber);break;
+            case "%":result =  Double.parseDouble(newNumber) * 100.0/Double.parseDouble(oldNumber);break;
+        }
+        editText.setText(result+"");
+    }
+
+    public boolean dotIsTrue(String number ){
+  if(number.indexOf(".")== -1){
+    return false;
+   }else{
+    return true;
+  }
+
+    }
+
 
 }
