@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_maib_linear.xml" value="0.20774078369140625" />
+        <entry key="app/src/main/res/drawable/button_stile.xml" value="0.126" />
+        <entry key="app/src/main/res/layout-land/activity_maib_linear.xml" value="0.15589278534421355" />
+        <entry key="app/src/main/res/layout/activity_maib_linear.xml" value="0.216552734375" />
+        <entry key="app/src/main/res/layout/oig.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>
