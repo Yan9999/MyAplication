@@ -1,13 +1,10 @@
 package com.example.myaplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
-import java.util.Locale;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -82,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             case "+":result =Double.parseDouble(oldNumber)+ Double.parseDouble(newNumber);break;
             case "/":result =Double.parseDouble(oldNumber)/ Double.parseDouble(newNumber);break;
             case "*":result =Double.parseDouble(oldNumber)* Double.parseDouble(newNumber);break;
-            case "%":result =  Double.parseDouble(newNumber) * 100.0/Double.parseDouble(oldNumber);break;
+
         }
         editText.setText(result+"");
     }
