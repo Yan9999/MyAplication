@@ -4,9 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_stile.xml" value="0.126" />
+        <entry key="app/src/main/res/drawable/button_stile2.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout-land/activity_maib_linear.xml" value="0.15589278534421355" />
-        <entry key="app/src/main/res/layout/activity_maib_linear.xml" value="0.216552734375" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.34959081701330236" />
+        <entry key="app/src/main/res/layout/activity_maib_linear.xml" value="0.24523773193359377" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35081329345703127" />
+        <entry key="app/src/main/res/layout/class_work.xml" value="0.15277099609374994" />
         <entry key="app/src/main/res/layout/oig.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.126" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.126" />
       </map>
     </option>
   </component>
@@ -15,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

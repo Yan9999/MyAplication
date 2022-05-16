@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rik_i_smertel_nyy_oboi_1600x1200_23"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/EditText1"
+        style="@style/MyEditStyle"
+        android:layout_width="397dp"
+        android:layout_height="@dimen/buttonSize"
+
+        android:layout_marginStart="100dp"
+        android:hapticFeedbackEnabled="false"
+        android:text=" 0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/button0.1"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/button0.2"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/button0.3"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/button_AC"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_AC" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button0.4"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_4" />
+
+        <Button
+
+            android:id="@+id/button0.5"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/button0.6"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/button_equals"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="Equals"
+            android:text="@string/_equals" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button0.7"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:background="@drawable/button_stile"
+            android:onClick="button1_onClick"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/button0.8"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/button0.9"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/button_dot"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_dot" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_minus"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_marginLeft="0dp"
+            android:onClick="operation"
+            android:text="@string/_minus" />
+
+        <Button
+            android:id="@+id/button_plus"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="operation"
+            android:text="@string/_plus" />
+
+        <Button
+            android:id="@+id/button0.0"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="button1_onClick"
+            android:text="@string/_0" />
+
+        <Button
+
+            android:id="@+id/button_share"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="operation"
+            android:text="@string/_share" />
+
+        <Button
+            android:id="@+id/button_multiply"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="operation"
+            android:text="@string/_multiply" />
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
