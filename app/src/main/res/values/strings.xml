@@ -1,4 +1,6 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
     <string name="app_name">MyAplication</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
@@ -17,6 +19,9 @@
     <string name="_multiply">*</string>
     <string name="_equals">=</string>
     <string name="_AC">AC</string>
+
+
+
 
 
 </resources>
