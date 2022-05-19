@@ -29,8 +29,8 @@
         <com.google.android.material.button.MaterialButton
 
             android:id="@+id/button0.1"
-            android:layout_width="@dimen/buttonSize"
-            android:layout_height="@dimen/buttonSize"
+            android:layout_width="@dimen/buttonSize1"
+            android:layout_height="@dimen/buttonSize1"
             style="@style/MyCoolStyle"
             android:onClick="button1_onClick"
             android:text="@string/_1"
@@ -39,8 +39,8 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button0.2"
-            android:layout_width="@dimen/buttonSize"
-            android:layout_height="@dimen/buttonSize"
+            android:layout_width="@dimen/buttonSize1"
+            android:layout_height="@dimen/buttonSize1"
             style="@style/MyCoolStyle"
             android:onClick="button1_onClick"
             android:text="@string/_2"
@@ -61,10 +61,20 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_AC"
             style="@style/MyCoolStyle"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/buttonSize"
             android:layout_height="@dimen/buttonSize"
             android:onClick="button1_onClick"
             android:text="@string/_AC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_pro"
+            style="@style/MyCoolStyle"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:onClick="clickPercent"
+            android:text="@string/_pro"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password"/>
 

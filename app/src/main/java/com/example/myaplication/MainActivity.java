@@ -1,6 +1,5 @@
 package com.example.myaplication;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -12,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Boolean isNew= true;
 
     String oldNumber;
-    String operator;
+    String operator="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Получить пользовательский элемент по идентификатору
         editText = findViewById(R.id.EditText1);
+
     }
-    @SuppressLint("NonConstantResourceId")
     public void button1_onClick(View view) {
         if(isNew){
             editText.setText(" ");
@@ -31,20 +30,60 @@ public class MainActivity extends AppCompatActivity {
 
         String number = editText.getText().toString();
         switch (view.getId()){
-            case R.id.button0_1:number = number +"1";break;
-            case R.id.button0_2:number = number +"2";break;
-            case R.id.button0_3:number = number +"3";break;
-            case R.id.button0_4:number = number +"4";break;
-            case R.id.button0_5:number = number +"5";break;
-            case R.id.button0_6:number = number +"6";break;
-            case R.id.button0_7:number = number +"7";break;
-            case R.id.button0_8:number = number +"8";break;
-            case R.id.button0_9:number = number +"9";break;
-            case R.id.button0_0:number = number +"0";break;
-            case R.id.button_AC:number =" ";break;
+            case R.id.button0_1:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                    number = number +"1";break;
+                }
 
-
-
+            case R.id.button0_2:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"2";break;}
+            case R.id.button0_3:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"3";break;}
+            case R.id.button0_4:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"4";break;}
+            case R.id.button0_5:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"5";break;}
+            case R.id.button0_6:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"6";break;}
+            case R.id.button0_7:
+                if(isZero(number)&& number.length() == 1 ){
+                number = " "+number.substring(1);
+            }else{
+                number = number +"7";break;}
+            case R.id.button0_8:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{number = number +"8";break;}
+            case R.id.button0_9:
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+number.substring(1);
+                }else{
+                number = number +"9";break;}
+            case R.id.button0_0:
+            if(isZero(number)&& number.length() == 1 ){
+            number = " "+"0";
+            }else {
+                number = number +"0";
+            }
+            break;
+            case R.id.button_AC:number =""; break;
             case R.id.button_dot:
 
                 if(dotIsTrue(number)){
@@ -75,11 +114,40 @@ public class MainActivity extends AppCompatActivity {
         switch (operator){
             case "-":result =Double.parseDouble(oldNumber)- Double.parseDouble(newNumber);break;
             case "+":result =Double.parseDouble(oldNumber)+ Double.parseDouble(newNumber);break;
-            case "/":result =Double.parseDouble(oldNumber)/ Double.parseDouble(newNumber);break;
+            case "/":try { result =Double.parseDouble(oldNumber)/ Double.parseDouble(newNumber); }
+            catch (ArithmeticException ex){
+                editText.setText("Делить на 0 нельзя!");
+            }
+                break;
             case "*":result =Double.parseDouble(oldNumber)* Double.parseDouble(newNumber);break;
-
+            case "%": result =Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
         }
-        editText.setText(result+"");
+
+        editText.setText(""+result+"");
+    }
+
+    public void clickPercent (View view) {
+
+        if(operator == ""){
+            isNew=true;
+            oldNumber = editText.getText().toString();
+            operator = "%";
+        }else{
+            String newNumber = editText.getText().toString();
+            Double result = 0.0;
+            switch (operator) {
+                case "-": result = Double.parseDouble(oldNumber) - Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
+                case "+": result = Double.parseDouble(oldNumber) + Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
+
+                    case "/":result =  Double.parseDouble(oldNumber) / Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
+
+
+
+                case "*": result = Double.parseDouble(oldNumber) * Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
+            }
+            editText.setText(" "+result+"");
+        }
+
     }
 
     public boolean dotIsTrue(String number ){
@@ -91,5 +159,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public boolean isZero(String number) {
+        if (  number.equals("0")|| number.equals("")){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
-}
+
+
+
+    }
+
+
+

@@ -13,5 +13,7 @@
     <dimen name="buttonSize1">48sp</dimen>
     <dimen name="buttonSizeText">60dp</dimen>
 
+    <dimen name="textSizeSetting">20dp</dimen>
+
 
 </resources>

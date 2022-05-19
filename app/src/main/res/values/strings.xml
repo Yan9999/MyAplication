@@ -19,7 +19,17 @@
     <string name="_multiply">*</string>
     <string name="_equals">=</string>
     <string name="_AC">AC</string>
+    <string name="_pro">%</string>
 
+
+    <string name="descriptionLanguage">Language</string>
+    <string name="language">English</string>
+
+    <string name="descriptionOrientation">Orientation</string>
+    <string name="orientation">Portland</string>
+
+    <string name="night_mode">Not night</string>
+    <string name="descriptionNight_mode">Night mode</string>
 
 
 
