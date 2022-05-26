@@ -4,4 +4,16 @@
     <dimen name="key_text_size">40sp</dimen>
     <dimen name="key_text_size_horizon">20sp</dimen>
     <dimen name="margin_small" >4sp</dimen>
+
+    <dimen name="text_size" >30sp</dimen>
+
+    <dimen name="margin">8dp</dimen>
+    <dimen name="textSize">42sp</dimen>
+    <dimen name="buttonSize">60sp</dimen>
+    <dimen name="buttonSize1">48sp</dimen>
+    <dimen name="buttonSizeText">60dp</dimen>
+
+    <dimen name="textSizeSetting">20dp</dimen>
+
+
 </resources>
