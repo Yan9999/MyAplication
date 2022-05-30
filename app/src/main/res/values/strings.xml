@@ -22,16 +22,25 @@
     <string name="_pro">%</string>
 
 
+    <string name="settings">Settings</string>
+
     <string name="descriptionLanguage">Language</string>
     <string name="language">English</string>
 
+    <string name="themes">night</string>
+    <string name="descriptionNight_themes">themes</string>
+
     <string name="descriptionOrientation">Orientation</string>
     <string name="orientation">Portland</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="night_mode">Not night</string>
-    <string name="descriptionNight_mode">Night mode</string>
 
-
+    <string name="my_cool_style" translatable="false">My cool style</string>
+    <string name="material_light" translatable="false">Material light</string>
+    <string name="material_light_action_bar_dark" translatable="false">Material light action bar
+ dark</string>
+    <string name="material_dark" translatable="false">Material dark</string>
 
 
 </resources>

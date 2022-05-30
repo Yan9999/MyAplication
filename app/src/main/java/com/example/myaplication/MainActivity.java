@@ -2,11 +2,15 @@ package com.example.myaplication;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity  extends AppCompatActivity {
     EditText editText;
     Boolean isNew= true;
 
@@ -41,32 +45,32 @@ public class MainActivity extends AppCompatActivity {
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"2";break;}
+                    number = number +"2";break;}
             case R.id.button0_3:
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"3";break;}
+                    number = number +"3";break;}
             case R.id.button0_4:
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"4";break;}
+                    number = number +"4";break;}
             case R.id.button0_5:
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"5";break;}
+                    number = number +"5";break;}
             case R.id.button0_6:
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"6";break;}
+                    number = number +"6";break;}
             case R.id.button0_7:
                 if(isZero(number)&& number.length() == 1 ){
-                number = " "+number.substring(1);
-            }else{
-                number = number +"7";break;}
+                    number = " "+number.substring(1);
+                }else{
+                    number = number +"7";break;}
             case R.id.button0_8:
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
@@ -75,14 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 if(isZero(number)&& number.length() == 1 ){
                     number = " "+number.substring(1);
                 }else{
-                number = number +"9";break;}
+                    number = number +"9";break;}
             case R.id.button0_0:
-            if(isZero(number)&& number.length() == 1 ){
-            number = " "+"0";
-            }else {
-                number = number +"0";
-            }
-            break;
+                if(isZero(number)&& number.length() == 1 ){
+                    number = " "+"0";
+                }else {
+                    number = number +"0";
+                }
+                break;
             case R.id.button_AC:number =""; break;
             case R.id.button_dot:
 
@@ -139,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 case "-": result = Double.parseDouble(oldNumber) - Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
                 case "+": result = Double.parseDouble(oldNumber) + Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
 
-                    case "/":result =  Double.parseDouble(oldNumber) / Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
+                case "/":result =  Double.parseDouble(oldNumber) / Double.parseDouble(newNumber) *Double.parseDouble(oldNumber) / 100;break;
 
 
 
@@ -170,7 +174,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    }
-
-
-
+}
